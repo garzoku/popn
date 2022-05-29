@@ -1,0 +1,43 @@
+.action-container {
+  display: flex;
+  border-bottom: 1px solid #333333;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.action-container nav {
+  margin-left: 4px;
+}
+
+.primary-action {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+li+li {
+  margin: 0 6px;
+}
+
+.button {
+  font: bold 16px Arial;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 4px 12px 4px 12px;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  background-color: mediumseagreen;
+}
+
+a {
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
