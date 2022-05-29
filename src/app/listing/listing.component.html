@@ -1,13 +1,13 @@
-<li>
+<li *ngFor="let listing of listings">
   <figure class="listing">
     <div class="listing-image">
       <img
-        src="https://img.money.com/2017/05/170515-walt-disney-world-cost.jpeg?crop=0px%2C279px%2C2700px%2C1519px&quality=85"
+        src="{{listing.imageUrl}}"
         alt="alt descrip">
     </div>
     <div class="listing-content">
       <div class="listing-title">
-        <h2>Disney World</h2>
+        <h2>{{listing.name}}</h2>
         <ul>
           <li><a class="button" href="#">Directions</a></li>
           <li><a class="button" href="#">Website</a></li>
@@ -15,12 +15,12 @@
       </div>
       <div class="listing-description">
         <figcaption>
-          <p>Disney world is a badass place to go.</p>
+          <p>{{listing.description}}</p>
         </figcaption>
       </div>
       <div class="listing-metadata">
-        <p>Hours of Operation: </p>
-        <p>Happening: Until:</p>
+        <p>Hours of Operation: {{listing.hourBeginning}} until {{listing.hourEnding}}</p>
+        <p>Happening: {{listing.dateBeginning}} until {{listing.dateEnding}}</p>
       </div>
     </div>
   </figure>

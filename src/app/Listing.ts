@@ -1,4 +1,5 @@
 export class Listing {
+  imageUrl!: String;
   name!: string;
   websiteUrl?: string;
   directionsUrl!: string;
