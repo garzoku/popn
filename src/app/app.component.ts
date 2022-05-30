@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivityService } from './activity.service';
-import { Listing } from './Listing';
+import { Activity } from './Activity';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +9,12 @@ import { Listing } from './Listing';
 })
 export class AppComponent {
   title = 'popn';
-  activityList: Listing[] = [];
+  activityList: Activity[] = [];
   constructor(private service: ActivityService){}
 
   ngOnInit(): void {
     this.service.activityList.subscribe(response => {
-      this.activityList = response.listings;
+      this.activityList = response.activities;
     })
   }
 }

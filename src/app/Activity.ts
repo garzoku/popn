@@ -1,4 +1,4 @@
-export class Listing {
+export class Activity {
   imageUrl!: String;
   name!: string;
   websiteUrl?: string;

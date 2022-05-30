@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListingComponent } from './listing.component';
+import { FindWhatsPopnComponent } from './find-whats-popn.component';
 
-describe('ListingComponent', () => {
-  let component: ListingComponent;
-  let fixture: ComponentFixture<ListingComponent>;
+describe('FindWhatsPopnComponent', () => {
+  let component: FindWhatsPopnComponent;
+  let fixture: ComponentFixture<FindWhatsPopnComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListingComponent ]
+      declarations: [ FindWhatsPopnComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListingComponent);
+    fixture = TestBed.createComponent(FindWhatsPopnComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

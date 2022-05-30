@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import {Listing} from "./Listing"
+import {Activity} from "./Activity"
 
 import { HttpClient } from '@angular/common/http'
 
 type ActivityReponse = {
-  listings: Listing[];
+  activities: Activity[];
 }
 
 @Injectable({
@@ -15,6 +15,6 @@ export class ActivityService {
 constructor(private http: HttpClient){}
 
 get activityList(){
-  return this.http.get<ActivityReponse>("../assets/listings.json")
+  return this.http.get<ActivityReponse>("../assets/activities.json")
   }
 }
