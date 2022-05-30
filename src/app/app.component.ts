@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivityService } from './activity.service';
+import { Listing } from './Listing';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'popn';
+  activityList: Listing[] = [];
+  constructor(private service: ActivityService){}
+
+  ngOnInit(): void {
+    this.service.activityList.subscribe(response => {
+      this.activityList = response.listings;
+    })
+  }
 }
