@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Activity } from '../Activity';
+import { ActivityService } from '../activity.service';
 
 
 @Component({
@@ -9,6 +10,12 @@ import { Activity } from '../Activity';
 })
 export class FindWhatsPopnComponent {
 
-  @Input() activities!: Activity[];
-  constructor() { }
+  activityList: Activity[] = [];
+  constructor(private service: ActivityService){}
+
+  ngOnInit(): void {
+    this.service.activityList.subscribe(response => {
+      this.activityList = response.activities;
+    })
+  }
 }
