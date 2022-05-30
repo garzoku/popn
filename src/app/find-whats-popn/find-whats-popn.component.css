@@ -1,21 +1,40 @@
+.listings {
+  margin: 12px;
+  text-align: center;
+}
+
+.listings li{
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.listings li {
+  margin-left: 10px;
+}
+
 .listing {
-  border: 1px solid #333333;
   display: flex;
   flex-direction: column;
-  margin: 12px;
-  max-width: 605px;
-  min-height: 600px;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
   position: relative;
   border-radius: 12px;
   background-color: #ffffff;
 }
 
+
+
 .listing-content {
   margin: 10px;
+  margin-bottom: 70px;
 }
 
 .listing-title {
   margin-top: 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333333;
 }
 
 .listing-title ul {
@@ -29,7 +48,7 @@
 .listing-title h2 {
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .listing-description {
@@ -42,11 +61,15 @@
   bottom: 0;
   left: 0;
   margin: 10px;
+  font-size: 20px;
+}
+
+.listing-image {
+  padding: 2px 3px;
 }
 
 img {
-  max-width: 600px;
-  margin: 2px;
+  width: 100%;
   border-radius:12px;
 }
 

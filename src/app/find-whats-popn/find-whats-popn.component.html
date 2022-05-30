@@ -1,27 +1,29 @@
-<li *ngFor="let listing of activities">
-  <figure class="listing">
-    <div class="listing-image">
-      <img
-        src="{{listing.imageUrl}}"
-        alt="alt descrip">
-    </div>
-    <div class="listing-content">
-      <div class="listing-title">
-        <h2>{{listing.name}}</h2>
-        <ul>
-          <li><a class="button" href="#">Directions</a></li>
-          <li><a class="button" href="#">Website</a></li>
-        </ul>
-      </div>
-      <div class="listing-description">
-        <figcaption>
-          <p>{{listing.description}}</p>
-        </figcaption>
-      </div>
-      <div class="listing-metadata">
-        <p>Hours of Operation: {{listing.hourBeginning}} until {{listing.hourEnding}}</p>
-        <p>Happening: {{listing.dateBeginning}} until {{listing.dateEnding}}</p>
-      </div>
-    </div>
-  </figure>
-</li>
+<div class="find-whats-popn">
+  <ul class="listings">
+    <li *ngFor="let listing of activities">
+      <figure class="listing">
+        <div class="listing-image">
+          <img src="{{listing.imageUrl}}" alt="alt descrip">
+        </div>
+        <div class="listing-content">
+          <div class="listing-title">
+            <h2>{{listing.name}}</h2>
+            <ul>
+              <li><a class="button" href="#">Directions</a></li>
+              <li><a class="button" href="#">Website</a></li>
+            </ul>
+          </div>
+          <div class="listing-description">
+            <figcaption>
+              <p>{{listing.description}}</p>
+            </figcaption>
+          </div>
+          <div class="listing-metadata">
+            <p>Hours of Operation: {{listing.hourBeginning}} until {{listing.hourEnding}}</p>
+            <p>Happening: {{listing.dateBeginning}} until {{listing.dateEnding}}</p>
+          </div>
+        </div>
+      </figure>
+    </li>
+  </ul>
+</div>

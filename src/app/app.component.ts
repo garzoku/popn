@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivityService } from './activity.service';
 import { Activity } from './Activity';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
