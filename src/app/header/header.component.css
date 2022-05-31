@@ -19,7 +19,24 @@ padding: 12px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
 
+header .favicon {
+background-color: #c1c8e4;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 12px;
+  margin-right: 6px;
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+.favicon a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600 ;
 }
 
 li+li {
