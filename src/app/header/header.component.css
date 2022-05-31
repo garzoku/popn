@@ -4,10 +4,10 @@ header {
 
 header nav {
   margin-left: 6px;
-padding: 12px;
+  padding: 12px;
   background-color: #c1c8e4;
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
 .primary-action {
@@ -22,12 +22,11 @@ padding: 12px;
 }
 
 header .favicon {
-background-color: #c1c8e4;
+  background-color: #c1c8e4;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   padding: 12px;
   margin-right: 6px;
-  display: flex;
   position: absolute;
   right: 0;
 }
@@ -35,7 +34,7 @@ background-color: #c1c8e4;
 .favicon a{
   text-decoration: none;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600 ;
 }
 
