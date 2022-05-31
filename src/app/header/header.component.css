@@ -50,9 +50,19 @@ li+li {
   padding: 4px 12px 4px 12px;
   border: 1px solid #f1f0eb;
   border-radius: 12px;
-  background-color: #DE1414;
+  background-color: hsl(0, 83%, 57%);
   color: #ffffff;
+box-shadow: 0 4px #999;
+}
 
+.button:hover {
+  background-color: hsl(0, 83%, 40%);
+}
+
+.button:active {
+  background-color: hsl(0, 83%, 40%);
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
 }
 
 a {
