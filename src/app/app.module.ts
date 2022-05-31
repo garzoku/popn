@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FindWhatsPopnComponent } from './find-whats-popn/find-whats-popn.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddWhatsPopnComponent } from './add-whats-popn/add-whats-popn.component';
+import { ActivityListingComponent } from './activity-listing/activity-listing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FindWhatsPopnComponent
+    FindWhatsPopnComponent,
+    AddWhatsPopnComponent,
+    ActivityListingComponent
   ],
   imports: [
     BrowserModule,

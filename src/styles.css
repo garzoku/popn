@@ -1,5 +1,14 @@
-main {
-  display: flex;
-  justify-content: center;
-  background-image: url("./assets/background-texture.png");
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&family=VT323&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.spectrum-background {
+  background:
+    linear-gradient(#24305e, transparent),
+    linear-gradient(to top left, #374785, transparent),
+    linear-gradient(to top right, #a8d0e6, transparent);
+
+  background-blend-mode: screen;
 }

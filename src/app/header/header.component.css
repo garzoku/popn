@@ -1,17 +1,25 @@
-.action-container {
+header {
   display: flex;
-  align-items: center;
-  padding: 10px 0;
 }
 
-.action-container nav {
-  margin-left: 4px;
+header nav {
+  margin-left: 6px;
+padding: 12px;
+  background-color: #c1c8e4;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
 }
 
 .primary-action {
+  background-color: #c1c8e4;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 12px;
   display: flex;
-  justify-content: center;
-  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
 li+li {
@@ -19,13 +27,15 @@ li+li {
 }
 
 .button {
-  font: bold 16px Arial;
+  text-align: center;
+  font: bold 18px Arial;
   text-decoration: none;
-  color: #ffffff;
   padding: 4px 12px 4px 12px;
-  border: 1px solid #333333;
+  border: 1px solid #f1f0eb;
   border-radius: 12px;
-  background-color: mediumseagreen;
+  background-color: #DE1414;
+  color: #ffffff;
+
 }
 
 a {

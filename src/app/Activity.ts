@@ -1,11 +1,11 @@
 export class Activity {
-  imageUrl!: String;
+  imageUrl!: string;
   name!: string;
-  websiteUrl?: string;
+  websiteUrl!: string;
   directionsUrl!: string;
   description!: string;
-  hourBeginning?: string;
-  hourEnding?: string;
-  dateBeginning?: string;
-  dateEnding?: string;
+  hourBeginning!: string;
+  hourEnding!: string;
+  dateBeginning!: string;
+  dateEnding!: string;
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Activity } from '../Activity';
 import { ActivityService } from '../activity.service';
 
@@ -11,6 +11,15 @@ import { ActivityService } from '../activity.service';
 export class FindWhatsPopnComponent {
 
   activityList: Activity[] = [];
+
+    @Output() imageUrl!: string;
+    @Output() name!: string;
+    @Output() description!: string;
+    @Output() hourBeginning!: string;
+    @Output() hourEnding!: string;
+    @Output() dateBeginning!: string;
+    @Output() dateEnding!: string;
+
   constructor(private service: ActivityService){}
 
   ngOnInit(): void {

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FindWhatsPopnComponent } from './find-whats-popn/find-whats-popn.component';
+import { AddWhatsPopnComponent } from './add-whats-popn/add-whats-popn.component'
 
 const routes: Routes = [{
   path: "",
@@ -12,7 +13,7 @@ const routes: Routes = [{
 },
 {
   path: "add-whats-popn",
-  component: FindWhatsPopnComponent
+  component: AddWhatsPopnComponent
 },
 {
   path: "activity/:id",
