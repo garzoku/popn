@@ -9,8 +9,8 @@
   "description": "Great for the family, lots of stuff for kids to do, lots of food, no alcohol, high prices, worth revisiting.",
   "hourBeginning": "1",
   "hourEnding": "1",
-  "dateBeginning": "1",
-  "dateEnding": "1"
+  "dateBeginning": "2019-01-16",
+  "dateEnding": "2019-02-16"
 },
 {
   "id": 2,
@@ -21,8 +21,8 @@
   "description": "Disney world is a badass place.",
   "hourBeginning": "1",
   "hourEnding": "1",
-  "dateBeginning": "1",
-  "dateEnding": "1"
+  "dateBeginning": "2019-01-16",
+  "dateEnding": "2019-02-16"
 },
 {
   "id": 3,
@@ -33,8 +33,8 @@
   "description": "Great for the family, lots of stuff for kids to do, lots of food, no alcohol, high prices, worth revisiting.",
   "hourBeginning": "1",
   "hourEnding": "1",
-  "dateBeginning": "1",
-  "dateEnding": "1"
+  "dateBeginning": "2019-01-16",
+  "dateEnding": "2019-02-16"
 },
 {
   "id": 4,
@@ -45,7 +45,7 @@
   "description": "Great for the family, lots of stuff for kids to do, lots of food, no alcohol, high prices, worth revisiting.",
   "hourBeginning": "1",
   "hourEnding": "1",
-  "dateBeginning": "1",
-  "dateEnding": "1"
+  "dateBeginning": "2019-01-16",
+  "dateEnding": "2019-02-16"
 }]
 }
