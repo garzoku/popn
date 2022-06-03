@@ -7,7 +7,7 @@ import { Activity } from '../Activity';
   styleUrls: ['./activity-listing.component.css']
 })
 export class ActivityListingComponent {
-  @Input() id!: string;
+  @Input() id!: number;
   @Input() imageUrl!: string;
   @Input() name!: string;
   @Input() description!: string;

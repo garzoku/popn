@@ -22,8 +22,7 @@ export class ActivityPageComponent implements OnInit {
 
     this.service.activityList.subscribe(response => {
       this.activityList = response.activities;
-      this.activity = this.activityList.find(activity => activity.id === this.id);
-console.log(this.activity);
+      this.activity = this.activityList.find(activity => activity.id === +this.id);
     })
   }
 }

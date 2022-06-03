@@ -2,11 +2,11 @@
 <ng-template #activityPageView>
 <figure class="event">
   <div class="event-image">
-    <img src="{{activity?.imageUrl}}" alt="alt descrip">
+    <img src="{{activity.imageUrl}}" alt="alt descrip">
   </div>
   <div class="event-content">
     <div class="event-title">
-      <h2>{{activity?.name}}</h2>
+      <h2>{{activity.name}}</h2>
       <ul>
         <li><a class="button" href="#">Directions</a></li>
         <li><a class="button" href="#">Website</a></li>
@@ -14,13 +14,13 @@
     </div>
     <div class="event-description">
       <figcaption>
-        <p>{{activity?.description}}</p>
+        <p>{{activity.description}}</p>
       </figcaption>
     </div>
     <div class="event-metadata">
-      <p><span>Hours: </span>{{activity?.hourBeginning}} until {{activity?.hourEnding}}</p>
-      <p><span>Starts: </span>{{activity?.dateBeginning}}</p>
-      <p><span>Ends: </span> {{activity?.dateEnding}}</p>
+      <p><span>Hours: </span>{{activity.hourBeginning}} until {{activity.hourEnding}}</p>
+      <p><span>Starts: </span>{{activity.dateBeginning}}</p>
+      <p><span>Ends: </span> {{activity.dateEnding}}</p>
     </div>
   </div>
 </figure>

@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FindWhatsPopnComponent } from './find-whats-popn/find-whats-popn.component';
 import { AddWhatsPopnComponent } from './add-whats-popn/add-whats-popn.component'
-import {ActivityPageComponent} from './activity-page/activity-page.component'
+import { ActivityPageComponent } from './activity-page/activity-page.component'
 
 const routes: Routes = [{
   path: "",
-  component: FindWhatsPopnComponent
+  redirectTo: "find-whats-popn",
+  pathMatch: "full"
 },
 {
   path: "find-whats-popn",
