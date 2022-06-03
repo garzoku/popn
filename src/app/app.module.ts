@@ -8,6 +8,7 @@ import { FindWhatsPopnComponent } from './find-whats-popn/find-whats-popn.compon
 import { HttpClientModule } from '@angular/common/http';
 import { AddWhatsPopnComponent } from './add-whats-popn/add-whats-popn.component';
 import { ActivityListingComponent } from './activity-listing/activity-listing.component';
+import { ActivityPageComponent } from './activity-page/activity-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ActivityListingComponent } from './activity-listing/activity-listing.co
     HeaderComponent,
     FindWhatsPopnComponent,
     AddWhatsPopnComponent,
-    ActivityListingComponent
+    ActivityListingComponent,
+    ActivityPageComponent
   ],
   imports: [
     BrowserModule,

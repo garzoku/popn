@@ -1,4 +1,6 @@
+
 export class Activity {
+  id!: string;
   imageUrl!: string;
   name!: string;
   websiteUrl!: string;

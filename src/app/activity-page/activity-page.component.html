@@ -1,0 +1,14 @@
+<p *ngIf="error; else activitylisting" class="error">There was a problem getting the product list.</p>
+<ng-template #activitylisting>
+  <a routerLink="/activity/{{id}}" routerLinkActive="active"><app-activity-listing *ngIf="activity"
+    [id]="activity.id"
+    [imageUrl]="activity.imageUrl"
+    [name]="activity.name"
+    [description]="activity.description"
+    [hourBeginning]="activity.hourBeginning"
+    [hourEnding]="activity.hourEnding"
+    [dateBeginning]="activity.dateBeginning"
+    [dateEnding]="activity.dateEnding">
+  </app-activity-listing>
+</a>
+</ng-template>

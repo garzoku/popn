@@ -11,14 +11,8 @@ import { ActivityService } from '../activity.service';
 export class FindWhatsPopnComponent {
 
   activityList: Activity[] = [];
+  error = false;
 
-    @Output() imageUrl!: string;
-    @Output() name!: string;
-    @Output() description!: string;
-    @Output() hourBeginning!: string;
-    @Output() hourEnding!: string;
-    @Output() dateBeginning!: string;
-    @Output() dateEnding!: string;
 
   constructor(private service: ActivityService){}
 

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FindWhatsPopnComponent } from './find-whats-popn/find-whats-popn.component';
 import { AddWhatsPopnComponent } from './add-whats-popn/add-whats-popn.component'
+import {ActivityPageComponent} from './activity-page/activity-page.component'
 
 const routes: Routes = [{
   path: "",
@@ -17,7 +18,7 @@ const routes: Routes = [{
 },
 {
   path: "activity/:id",
-  component: FindWhatsPopnComponent
+  component:ActivityPageComponent
 },];
 
 @NgModule({
