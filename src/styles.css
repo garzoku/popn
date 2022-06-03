@@ -11,3 +11,18 @@
     linear-gradient(to top right, #a8d0e6, transparent);
   background-blend-mode: screen;
 }
+
+a {
+  text-decoration: none;
+}
+
+.selector {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 4px 4px 4px 4px;
+      border-radius: 12px;
+}
+
+.selector:hover {
+      background-color: hsl(0, 83%, 49%);
+}
