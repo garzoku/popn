@@ -7,6 +7,7 @@ import { Activity } from '../Activity';
   styleUrls: ['./activity-listing.component.css']
 })
 export class ActivityListingComponent {
+  @Input() id!: string;
   @Input() imageUrl!: string;
   @Input() name!: string;
   @Input() description!: string;
@@ -14,8 +15,5 @@ export class ActivityListingComponent {
   @Input() hourEnding!: string;
   @Input() dateBeginning!: string;
   @Input() dateEnding!: string;
-
-
-  @Input() activity!: Activity;
   constructor() { }
 }

@@ -3,12 +3,17 @@
   <ng-template #activityListing>
   <ul #activityListing class="listings">
     <li *ngFor="let activity of activityList">
-      <a routerLink="/activity/{{activity.id}}" routerLinkActive="active">
-        <app-activity-listing [imageUrl]="activity.imageUrl" [name]="activity.name" [description]="activity.description"
-          [hourBeginning]="activity.hourBeginning" [hourEnding]="activity.hourEnding"
-          [dateBeginning]="activity.dateBeginning" [dateEnding]="activity.dateEnding">
+        <app-activity-listing
+          [id]="activity.id"
+          [imageUrl]="activity.imageUrl"
+          [name]="activity.name"
+          [description]="activity.description"
+          [hourBeginning]="activity.hourBeginning"
+          [hourEnding]="activity.hourEnding"
+          [dateBeginning]="activity.dateBeginning"
+          [dateEnding]="activity.dateEnding">
         </app-activity-listing>
-      </a>
+
     </li>
   </ul>
 </ng-template>
