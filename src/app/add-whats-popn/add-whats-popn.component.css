@@ -32,3 +32,9 @@ position: relative;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
 }
+img {
+    width: 250px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 12px;
+}

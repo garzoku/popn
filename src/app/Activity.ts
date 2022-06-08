@@ -1,7 +1,7 @@
 
 export class Activity {
   id!: number;
-  imageUrl!: string;
+  image!: string;
   name!: string;
   websiteUrl!: string;
   address!: string;

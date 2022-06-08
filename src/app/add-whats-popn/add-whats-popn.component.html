@@ -1,6 +1,10 @@
 <div class="add-whats-popn">
   <div class="add-whats-popn-form">
     <form #addActivityForm="ngForm" (ngSubmit)="addActivity(addActivityForm.value)" action="add-whats-popn">
+      <label for="image">Upload Image</label><br>
+      <img [src]="url"><br>
+      <input ngModel type="file" (change)="onSelectFile($event)" name="image" accept="image/png, image/gif, image/jpeg" /><br>
+
       <label for="name">Activity Name</label><br>
       <input ngModel type="text" id="name" name="name" ><br>
 

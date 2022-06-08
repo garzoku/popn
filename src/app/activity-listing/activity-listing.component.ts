@@ -8,7 +8,7 @@ import { Activity } from '../Activity';
 })
 export class ActivityListingComponent {
   @Input() id!: number;
-  @Input() imageUrl!: string;
+  @Input() image!: string;
   @Input() name!: string;
   @Input() description!: string;
   @Input() hourBeginning!: string;
