@@ -1,16 +1,7 @@
 import { ExpressionBinding } from '@angular/compiler';
 import { Component} from '@angular/core';
-
-type FormData = {
-  name:string,
-  address: string,
-  website: string,
-  description:string,
-  hourBeginning:string,
-  hourEnding:string,
-  dateBeginning:String,
-  dateEnding:string
-}
+import { ActivityService} from '../activity.service';
+import {Activity} from '../Activity';
 
 @Component({
   selector: 'app-add-whats-popn',
@@ -18,9 +9,12 @@ type FormData = {
   styleUrls: ['./add-whats-popn.component.css']
 })
 export class AddWhatsPopnComponent {
+activities: Activity[]= [];
+constructor(private service: ActivityService){}
 
-  addEvent({name, address, website, description, hourBeginning, hourEnding, dateBeginning, dateEnding}: FormData){
-    console.log(name, address, website, description, hourBeginning, hourEnding, dateBeginning, dateEnding);
+addActivity(newActivity: Activity){
+  this.service.addActivity(newActivity).subscribe(response => {
+  this.activities = [response.activity, ...this.activities]
+});
   }
-
 }

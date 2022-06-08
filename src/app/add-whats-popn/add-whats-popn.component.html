@@ -1,14 +1,14 @@
 <div class="add-whats-popn">
   <div class="add-whats-popn-form">
-    <form #addActivityForm="ngForm" (ngSubmit)="addEvent(addActivityForm.value)" action="add-whats-popn">
+    <form #addActivityForm="ngForm" (ngSubmit)="addActivity(addActivityForm.value)" action="add-whats-popn">
       <label for="name">Activity Name</label><br>
-      <input ngModel type="text" id="name" name="name"><br>
+      <input ngModel type="text" id="name" name="name" ><br>
 
       <label for="address">Activity Address</label><br>
-      <input ngModel type="text" id="address" name="address"><br>
+      <input ngModel type="text" id="address" name="address" ><br>
 
-      <label for="website">Website</label><br>
-      <input ngModel type="text" id="website" name="website"><br>
+      <label for="websiteUrl">Website</label><br>
+      <input ngModel type="text" id="websiteUrl" name="websiteUrl"><br>
 
       <label for="description">Description</label><br>
       <textarea ngModel id="description" name="description" rows="4" cols="50"></textarea><br>
