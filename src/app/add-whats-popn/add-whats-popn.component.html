@@ -1,29 +1,29 @@
 <div class="add-whats-popn">
   <div class="add-whats-popn-form">
-    <form action="add-whats-popn">
+    <form #addActivityForm="ngForm" (ngSubmit)="addEvent(addActivityForm.value)" action="add-whats-popn">
       <label for="name">Activity Name</label><br>
-      <input type="text" id="name" name="name"><br>
+      <input ngModel type="text" id="name" name="name"><br>
 
       <label for="address">Activity Address</label><br>
-      <input type="text" id="address" name="address"><br>
+      <input ngModel type="text" id="address" name="address"><br>
 
       <label for="website">Website</label><br>
-      <input type="text" id="website" name="website"><br>
+      <input ngModel type="text" id="website" name="website"><br>
 
       <label for="description">Description</label><br>
-      <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+      <textarea ngModel id="description" name="description" rows="4" cols="50"></textarea><br>
 
-      <label for="hour-beginning">Open</label><br>
-      <input type="time" id="hour-beginning" name="hour-beginning"><br>
+      <label for="hourBeginning">Open</label><br>
+      <input ngModel type="time" id="hourBeginning" name="hourBeginning"><br>
 
-      <label for="hour-ending">Closed</label><br>
-      <input type="time" id="hour-ending" name="hour-ending"><br>
+      <label for="hourEnding">Closed</label><br>
+      <input ngModel type="time" id="hourEnding" name="hourEnding"><br>
 
-      <label for="date-beginning">Begins</label><br>
-      <input type="date" id="date-beginning" name="date-beginning"><br>
+      <label for="dateBeginning">Begins</label><br>
+      <input ngModel type="date" id="dateBeginning" name="dateBeginning"><br>
 
-      <label for="date-ending">Ends</label><br>
-      <input type="date" id="date-ending" name="date-ending"><br>
+      <label for="dateEnding">Ends</label><br>
+      <input ngModel type="date" id="dateEnding" name="dateEnding"><br>
 
       <input class="button" type="submit" value="Submit">
     </form>

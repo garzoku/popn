@@ -1,6 +1,7 @@
 .listing {
   display: flex;
   width: 800px;
+  height: 180px;
   position: relative;
   border-radius: 12px;
   background-color: #f0f0f0;
@@ -28,19 +29,19 @@
 }
 
 .listing-title h2 {
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
 .listing-description {
-  margin-top: 16px;
+  margin-top: 14px;
   font-size: 20px;
 }
 
 .listing-metadata {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   bottom: 0;
 
@@ -51,8 +52,9 @@
 }
 
 img {
-  max-width: 325px;
-  width: 100%;
+  width: 250px;
+  height: 175px;
+  object-fit: cover;
   border-radius: 12px;
 }
 
