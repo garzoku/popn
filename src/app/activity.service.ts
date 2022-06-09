@@ -12,7 +12,7 @@ type ActivityReponse = {
   activity: Activity;
 }
 
-const baseApiUrl = environment.baseApiUrl;
+const baseApiUrl = environment.urlEndpoint;
 
 @Injectable({
   providedIn: 'root'
@@ -21,11 +21,12 @@ export class ActivityService {
 
 constructor(private http: HttpClient){}
 
+
 get activityList(){
-  return this.http.get<ActivitiesReponse>(`${environment.baseApiUrl}/api/activities`)
+  return this.http.get<ActivitiesReponse>(`${baseApiUrl}/api/activities`)
   }
 
 addActivity(activity: Activity){
-  return this.http.post<ActivityReponse>(`${environment.baseApiUrl}/api/activities`, activity)
+  return this.http.post<ActivityReponse>(`${baseApiUrl}/api/activities`, activity)
 }
 }

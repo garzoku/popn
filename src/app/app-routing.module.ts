@@ -4,6 +4,7 @@ import { FindWhatsPopnComponent } from './find-whats-popn/find-whats-popn.compon
 import { AddWhatsPopnComponent } from './add-whats-popn/add-whats-popn.component'
 import { ActivityPageComponent } from './activity-page/activity-page.component'
 
+
 const routes: Routes = [{
   path: "",
   redirectTo: "find-whats-popn",

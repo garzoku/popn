@@ -1,6 +1,7 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, Output, SecurityContext } from '@angular/core';
 import { Activity } from '../Activity';
 import { ActivityService } from '../activity.service';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class FindWhatsPopnComponent {
   error = false;
 
 
-  constructor(private service: ActivityService){}
+  constructor(private service: ActivityService, private sanitizer:DomSanitizer){}
 
   ngOnInit(): void {
     this.service.activityList.subscribe(response => {

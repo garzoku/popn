@@ -11,6 +11,8 @@ import { AddWhatsPopnComponent } from './add-whats-popn/add-whats-popn.component
 import { ActivityListingComponent } from './activity-listing/activity-listing.component';
 import { ActivityPageComponent } from './activity-page/activity-page.component';
 import { ActivityPageViewComponent } from './activity-page-view/activity-page-view.component';
+import { ImagekitioAngularModule } from 'imagekitio-angular';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,12 @@ import { ActivityPageViewComponent } from './activity-page-view/activity-page-vi
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ImagekitioAngularModule.forRoot({
+      publicKey: "public_lAolm4Cepti5GOedhXE0o4yzCuA=",
+      urlEndpoint: "https://ik.imagekit.io/popn",
+      authenticationEndpoint: `${environment.urlEndpoint}/api/activities`
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
