@@ -1,19 +1,14 @@
 header {
   display: flex;
+  background-color: hsl(211, 100%, 13%);
 }
 
 header nav {
   margin-left: 6px;
   padding: 12px;
-  background-color: #c1c8e4;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
 }
 
 .primary-action {
-  background-color: #c1c8e4;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
   padding: 12px;
   display: flex;
   position: absolute;
@@ -22,10 +17,7 @@ header nav {
 }
 
 header .favicon {
-  background-color: #c1c8e4;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
-  padding: 12px;
+  padding: 8px;
   margin-right: 6px;
   position: absolute;
   right: 0;
@@ -33,7 +25,10 @@ header .favicon {
 
 .favicon a{
   text-decoration: none;
-  color: #ffffff;
+  background-color: hsl(0, 99%, 64%);
+  padding: 12px;
+  border-radius: 6px;
+  color: hsl(178, 60%, 98%);
   font-size: 20px;
   font-weight: 600 ;
 }
@@ -47,20 +42,17 @@ li+li {
   font: bold 18px Arial;
   text-decoration: none;
   padding: 4px 12px 4px 12px;
-  border: 1px solid #f1f0eb;
-  border-radius: 12px;
-  background-color: hsl(0, 83%, 49%);
-  color: #ffffff;
-box-shadow: 0 4px #999;
+  border-radius: 6px;
+  border: 3px solid hsl(0, 99%, 64%);
+  color: hsl(178, 60%, 98%);
 }
 
 .button:hover {
-  background-color: hsl(0, 83%, 40%);
+  background-color: hsl(0, 99%, 64%);
 }
 
 .button:active {
-  background-color: hsl(0, 83%, 40%);
-  box-shadow: 0 2px #666;
+  background-color: hsl(0, 99%, 64%);
   transform: translateY(4px);
 }
 

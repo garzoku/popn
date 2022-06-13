@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "popn-media": {
+      "hosting": {
+        "popn": [
+          "popn-media"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "popn-media"
+  }
+}

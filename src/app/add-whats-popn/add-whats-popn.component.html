@@ -1,37 +1,99 @@
-<div class="add-whats-popn">
+<div class="add-whats-popn-background">
   <div class="add-whats-popn-form">
-    <form #addActivityForm="ngForm" (ngSubmit)="addActivity(addActivityForm.value)" action="add-whats-popn">
-      <label for="image">Upload Image</label><br>
-      <img src="{{url}}"><br>
-     <!-- <input ngModel type="file" (change)="onSelectFile($event)" name="image" accept="image/png, image/gif, image/jpeg" /><br>-->
+    <form
+      #addActivityForm="ngForm"
+      (ngSubmit)="
+        addActivity(addActivityForm.value);
+        addActivityForm.reset();
+        resetImage()
+      "
+      action="add-whats-popn"
+    >
+      <div class="image-description-name">
+        <label for="imageUrl">Upload Image</label><br />
+        <input
+          ngModel
+          type="text"
+          (input)="onSelectFile($event)"
+          name="imageUrl"
+          id="imageUrl"
+        /><br />
+        <img src="{{ imageUrl }}" /><br />
 
-      <ik-upload fileName="{{url}}" [useUniqueFileName]="false" [isPrivateFile]="true" (change)="onSelectFile($event)" name="image" accept="image/png, image/gif, image/jpeg"></ik-upload>
+        <label for="name">Activity Name</label><br />
+        <input
+          ngModel
+          type="text"
+          id="name"
+          name="name"
+          [(ngModel)]="$name"
+        /><br />
 
-      <label for="name">Activity Name</label><br>
-      <input ngModel type="text" id="name" name="name" ><br>
+        <label for="description">Description</label><br />
+        <textarea
+          ngModel
+          id="description"
+          name="description"
+          [(ngModel)]="$description"
+        ></textarea
+        ><br />
+      </div>
+      <div class="secondary-data">
+        <label for="address">Activity Address</label><br />
+        <input
+          ngModel
+          type="text"
+          id="address"
+          name="address"
+          [(ngModel)]="$address"
+        /><br />
 
-      <label for="address">Activity Address</label><br>
-      <input ngModel type="text" id="address" name="address" ><br>
+        <label for="websiteUrl">Website</label><br />
+        <input
+          ngModel
+          type="text"
+          id="websiteUrl"
+          name="websiteUrl"
+          [(ngModel)]="$websiteUrl"
+        /><br />
+        <div class="hours-dates">
+          <div class="hours">
+            <label for="hourBeginning">Open</label><br />
+            <input
+              ngModel
+              type="time"
+              id="hourBeginning"
+              name="hourBeginning"
+            /><br />
 
-      <label for="websiteUrl">Website</label><br>
-      <input ngModel type="text" id="websiteUrl" name="websiteUrl"><br>
+            <label for="hourEnding">Closed</label><br />
+            <input
+              ngModel
+              type="time"
+              id="hourEnding"
+              name="hourEnding"
+            /><br />
+          </div>
+          <div class="dates">
+            <label for="dateBeginning">Begins</label><br />
+            <input
+              ngModel
+              type="date"
+              id="dateBeginning"
+              name="dateBeginning"
+            /><br />
 
-      <label for="description">Description</label><br>
-      <textarea ngModel id="description" name="description" rows="4" cols="50"></textarea><br>
-
-      <label for="hourBeginning">Open</label><br>
-      <input ngModel type="time" id="hourBeginning" name="hourBeginning"><br>
-
-      <label for="hourEnding">Closed</label><br>
-      <input ngModel type="time" id="hourEnding" name="hourEnding"><br>
-
-      <label for="dateBeginning">Begins</label><br>
-      <input ngModel type="date" id="dateBeginning" name="dateBeginning"><br>
-
-      <label for="dateEnding">Ends</label><br>
-      <input ngModel type="date" id="dateEnding" name="dateEnding"><br>
-
-      <input class="button" type="submit" value="Submit">
+            <label for="dateEnding">Ends</label><br />
+            <input
+              ngModel
+              type="date"
+              id="dateEnding"
+              name="dateEnding"
+            /><br />
+          </div>
+        </div>
+      </div>
+      <input class="button" type="submit" value="Submit" />
     </form>
   </div>
 </div>

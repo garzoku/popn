@@ -1,4 +1,3 @@
-
 export class Activity {
   id!: number;
   imageUrl!: string;

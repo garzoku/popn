@@ -1,22 +1,31 @@
-<a routerLink="/activity/{{id}}" routerLinkActive="active">
-<div class="selector">
-  <figure class="listing">
-    <div class="listing-image">
-      <ik-image path="/{{imageUrl}}"></ik-image>
-    </div>
-    <div class="listing-content">
-      <div class="listing-title">
-        <h2>{{name}}</h2>
-        <ul>
-          <li>family-friendly, ie, ie</li>
-        </ul>
+<a routerLink="/activity/{{ id }}" routerLinkActive="active">
+  <div class="selector">
+    <figure class="listing">
+      <div class="listing-image">
+        <img src="{{ imageUrl }}" />
       </div>
-      <div class="listing-metadata">
-        <p><span>Hours: </span>{{hourBeginning}} until {{hourEnding}}</p>
-        <p><span>Starts: </span>{{dateBeginning}}</p>
-        <p><span>Ends: </span> {{dateEnding}}</p>
+      <div class="listing-content">
+        <div class="listing-title">
+          <h2>{{ name }}</h2>
+          <ul>
+            <li>
+              <span class="material-symbols-outlined">child_friendly</span>
+            </li>
+            <li><span class="material-symbols-outlined">attach_money</span></li>
+          </ul>
+        </div>
+        <div class="listing-metadata">
+          <p>
+            <span>Hours: </span>{{ timeFormatter(hourBeginning) }} =
+            {{ hourBeginning }} <span>Until </span
+            >{{ timeFormatter(hourEnding) }} = {{ hourEnding }}
+          </p>
+          <p>
+            <span>Dates: </span>{{ dateFormatter(dateBeginning) }}
+            <span>Thru </span>{{ dateFormatter(dateEnding) }}
+          </p>
+        </div>
       </div>
-    </div>
-  </figure>
-</div>
+    </figure>
+  </div>
 </a>

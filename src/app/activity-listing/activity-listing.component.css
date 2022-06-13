@@ -1,81 +1,71 @@
 .listing {
   display: flex;
-  width: 800px;
-  height: 180px;
+  width: 600px;
+  height: 160px;
   position: relative;
-  border-radius: 12px;
-  background-color: #f0f0f0;
-  border: 2px solid #a8d1e7;
-  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: hsl(211, 100%, 97%);
 }
 
 .listing-content {
   margin: 10px;
-  margin-bottom: 70px;
 }
 
 .listing-title {
   margin-top: 4px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #333333;
+  padding-bottom: 5px;
+  border-bottom: 1px solid hsl(211, 100%, 5%);
 }
 
 .listing-title ul {
   display: flex;
 }
 
-.listing-title li+li {
-  margin-left: 12px;
+.listing-title li + li {
+  margin-left: 8px;
 }
 
 .listing-title h2 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   margin-bottom: 15px;
+  color: hsl(211, 100%, 5%);
 }
 
 .listing-description {
   margin-top: 14px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .listing-metadata {
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   position: absolute;
   bottom: 0;
-
+  text-align: left;
+  color: hsl(211, 100%, 5%);
 }
 
 .listing-metadata span {
-  font-weight:700;
+  color: hsl(211, 25%, 53%);
+}
+
+.listing-image {
+  justify-content: center;
+  align-items: center;
 }
 
 img {
-  width: 250px;
-  height: 175px;
+  margin: 12px;
+  width: 260px;
+  height: 131px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 6px;
+  border: 3px solid hsl(211, 25%, 53%);
 }
 
-.button {
-  font-size:16px;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 4px 12px 4px 12px;
-  border: 1px solid #333333;
-  border-radius: 12px;
-  background-color: hsl(0, 83%, 49%);
-  color: #ffffff;
-  box-shadow: 0 4px #999;
-}
-
-.button:hover {
-  background-color: hsl(0, 83%, 40%);
-}
-
-.button:active {
-  background-color: hsl(0, 83%, 40%);
-  box-shadow: 0 2px #666;
-  transform: translateY(4px);
+.material-symbols-outlined {
+  padding: 3px;
+  background-color: hsl(0, 99%, 80%);
+  border-radius: 6px;
 }

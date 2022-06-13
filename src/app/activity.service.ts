@@ -12,7 +12,7 @@ type ActivityReponse = {
   activity: Activity;
 }
 
-const baseApiUrl = environment.urlEndpoint;
+const baseApiUrl = environment.apiUrl;
 
 @Injectable({
   providedIn: 'root'

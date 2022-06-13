@@ -1,0 +1,96 @@
+.homepage-container {
+  margin-top: 24px;
+}
+
+.hero-container {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  position: relative;
+  border-radius: 6px;
+  padding: 4px;
+  background-color: hsl(211, 50%, 85%);
+
+}
+
+.hero-content {
+  box-sizing: border-box;
+  margin-left: 6px;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: hsl(211, 100%, 97%);
+  height: 100%;
+}
+
+.hero-title {
+  margin-top: 4px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333333;
+}
+
+.hero-content ul {
+  display: flex;
+}
+
+.hero-title ul li+li {
+  margin-left: 12px;
+}
+
+.hero-title h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  margin-top: 16px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 4px 12px 4px 12px;
+  border-radius: 6px;
+  background-color: hsl(0, 99%, 64%);
+  color: hsl(211, 100%, 97%);
+}
+
+.button:hover {
+  background-color: hsl(0, 99%, 44%);
+}
+
+.button:active {
+  background-color: hsl(0, 99%, 44%);
+  transform: translateY(4px);
+}
+
+.popn-logo-large {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+.popn-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 300px;
+  background-color: #c1c8e4;
+  border-radius: 136px;
+}
+
+.popn-logo-text {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: 700;
+}

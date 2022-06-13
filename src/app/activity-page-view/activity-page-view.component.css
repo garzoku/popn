@@ -1,50 +1,54 @@
 .event {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 600px;
   position: relative;
-  border-radius: 12px;
-  background-color: #f0f0f0;
-  border: 2px solid #a8d1e7;
-  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: hsl(211, 50%, 85%);
+  border: 2px solid hsl(211, 50%, 85%);
+  padding: 3px;
+}
+
+.content-background {
+  background-color: hsl(211, 100%, 97%);
 }
 
 .event-content {
   margin: 10px;
   margin-bottom: 70px;
+  border-radius: 6px;
 }
 
 .event-title {
   margin-top: 4px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid hsl(211, 10%, 73%);
 }
 
 .event-title ul {
   display: flex;
 }
 
-.event-title li+li {
+.event-title li + li {
   margin-left: 12px;
 }
 
 .event-title h2 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
 .event-description {
   margin-top: 16px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .event-metadata {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 14px;
   position: absolute;
   bottom: 0;
-
 }
 
 .event-metadata span {
@@ -54,27 +58,25 @@
 img {
   max-width: 700px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .button {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   padding: 4px 12px 4px 12px;
   border: 1px solid #333333;
-  border-radius: 12px;
-  background-color: hsl(0, 83%, 49%);
+  border-radius: 6px;
+  background-color: hsl(0, 99%, 64%);
   color: #ffffff;
-  box-shadow: 0 4px #999;
 }
 
 .button:hover {
-  background-color: hsl(0, 83%, 40%);
+  background-color: hsl(0, 99%, 64%);
 }
 
 .button:active {
-  background-color: hsl(0, 83%, 40%);
-  box-shadow: 0 2px #666;
+  background-color: hsl(0, 99%, 64%);
   transform: translateY(4px);
 }

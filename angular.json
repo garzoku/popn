@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "popn:build:production",
+            "firebaseProject": "popn-media",
+            "firebaseHostingSite": "popn-media"
+          }
         }
       }
     }

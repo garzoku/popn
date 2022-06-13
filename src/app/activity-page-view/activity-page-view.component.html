@@ -2,8 +2,9 @@
 <ng-template #activityPageView>
 <figure class="event">
   <div class="event-image">
-    <ik-image path="/{{activity.imageUrl}}"></ik-image>
+    <img src="{{activity.imageUrl}}">
   </div>
+  <div class="content-background">
   <div class="event-content">
     <div class="event-title">
       <h2>{{activity.name}}</h2>
@@ -23,5 +24,6 @@
       <p><span>Ends: </span> {{activity.dateEnding}}</p>
     </div>
   </div>
+</div>
 </figure>
 </ng-template>

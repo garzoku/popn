@@ -1,32 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&family=VT323&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.spectrum-background {
-  background:
-    linear-gradient(#24305e, transparent),
-    linear-gradient(to top left, #374785, transparent),
-    linear-gradient(to top right, #a8d0e6, transparent);
-  background-blend-mode: screen;
+.background {
+  background-color: hsl(211, 50%, 90%);
 }
 
 a {
   text-decoration: none;
 }
 
-.selector {
-      font-size: 16px;
-      font-weight: 700;
-      padding: 4px 4px 4px 4px;
-      border-radius: 12px;
-}
-
 .selector:hover {
-      background-color: hsl(0, 83%, 49%);
+  text-decoration: underline;
 }
 
 a {
-  color:#333333;
+  color: hsl(211, 100%, 9%);
 }
