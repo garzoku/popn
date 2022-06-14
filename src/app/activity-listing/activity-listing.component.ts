@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Activity } from '../Activity';
 
 @Component({
@@ -8,6 +8,8 @@ import { Activity } from '../Activity';
 })
 export class ActivityListingComponent {
   @Input() activity!: Activity;
+
+  //@Output() activityOut?: Activity;
 
   constructor() {}
 

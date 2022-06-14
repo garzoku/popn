@@ -1,9 +1,11 @@
 <div class="activity-page">
-  <p *ngIf="error; else activityPageView" class="error">There was a problem getting the activitity.</p>
+  <p *ngIf="error; else activityPageView" class="error">
+    There was a problem getting the activitity.
+  </p>
   <ng-template #activityPageView>
     <app-activity-page-view
       *ngIf="activity"
       [activity]="activity"
-></app-activity-page-view>
+    ></app-activity-page-view>
   </ng-template>
 </div>

@@ -19,12 +19,12 @@
 .homepage-container {
   margin-top: 96px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .hero-container {
   display: flex;
-  width: 500px;
+  width: 700px;
   align-items: center;
   position: relative;
   border-radius: 6px;

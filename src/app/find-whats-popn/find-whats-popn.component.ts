@@ -16,7 +16,6 @@ export class FindWhatsPopnComponent {
   ngOnInit(): void {
     this.service.activityList.subscribe((response) => {
       this.activityList = response;
-      console.log(this.activityList);
     });
   }
 }

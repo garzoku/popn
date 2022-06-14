@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./activity-page.component.css'],
 })
 export class ActivityPageComponent implements OnInit {
-  activityList!: Activity[];
+  activityList: any = [];
   activity?: Activity;
   error = false;
   id!: string;
@@ -23,9 +23,10 @@ export class ActivityPageComponent implements OnInit {
     this.id = this.router.snapshot.paramMap.get('id') || '';
 
     this.service.activityList.subscribe((response) => {
-      this.activityList = response.activities;
+      this.activityList = response;
+      console.log(this.activityList);
       this.activity = this.activityList.find(
-        (activity) => activity.id === +this.id
+        (activity: Activity) => activity.id === +this.id
       );
     });
   }
