@@ -1,28 +1,25 @@
-<a routerLink="/activity/{{ id }}" routerLinkActive="active">
+<a routerLink="/activity/{{ activity.id }}" routerLinkActive="active">
   <div class="selector">
     <figure class="listing">
       <div class="listing-image">
-        <img src="{{ imageUrl }}" />
+        <img src="{{ activity.imageUrl }}" />
       </div>
       <div class="listing-content">
         <div class="listing-title">
-          <h2>{{ name }}</h2>
+          <h2>{{ activity.name }}</h2>
           <ul>
-            <li>
-              <span class="material-symbols-outlined">child_friendly</span>
-            </li>
+            <app-info-icon [activity]="activity"></app-info-icon>
             <li><span class="material-symbols-outlined">attach_money</span></li>
           </ul>
         </div>
         <div class="listing-metadata">
           <p>
-            <span>Hours: </span>{{ timeFormatter(hourBeginning) }} =
-            {{ hourBeginning }} <span>Until </span
-            >{{ timeFormatter(hourEnding) }} = {{ hourEnding }}
+            <span>Hours: </span>{{ timeFormatter(activity.hourBeginning) }}
+            <span>Until </span>{{ timeFormatter(activity.hourEnding) }}
           </p>
           <p>
-            <span>Dates: </span>{{ dateFormatter(dateBeginning) }}
-            <span>Thru </span>{{ dateFormatter(dateEnding) }}
+            <span>Dates: </span>{{ dateFormatter(activity.dateBeginning) }}
+            <span>Thru </span>{{ dateFormatter(activity.dateEnding) }}
           </p>
         </div>
       </div>

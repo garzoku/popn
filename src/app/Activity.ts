@@ -1,3 +1,5 @@
+import { Badge } from './Badge';
+
 export class Activity {
   id!: number;
   imageUrl!: string;
@@ -9,4 +11,5 @@ export class Activity {
   hourEnding!: string;
   dateBeginning!: string;
   dateEnding!: string;
+  badgesDto?: Badge[];
 }

@@ -14,9 +14,9 @@ export const environment = {
     measurementId: 'G-T0M2SSE041',
   },
   production: false,
-  apiUrl:"http://localhost:8080",
-  authenticationEndpoint:"http://localhost:8080/api/activities",
-  urlEndpoint: "http://localhost:8080/api/activities"
+  apiUrl: 'http://localhost:8080',
+  authenticationEndpoint: 'http://localhost:8080',
+  urlEndpoint: 'http://localhost:8080',
 };
 
 /*

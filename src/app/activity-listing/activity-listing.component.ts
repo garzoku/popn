@@ -7,18 +7,14 @@ import { Activity } from '../Activity';
   styleUrls: ['./activity-listing.component.css'],
 })
 export class ActivityListingComponent {
-  @Input() id!: number;
-  @Input() imageUrl!: string;
-  @Input() name!: string;
-  @Input() description!: string;
-  @Input() hourBeginning!: string;
-  @Input() hourEnding!: string;
-  @Input() dateBeginning!: string;
-  @Input() dateEnding!: string;
+  @Input() activity!: Activity;
 
   constructor() {}
 
   public dateFormatter(date: string) {
+    if (!date) {
+      return;
+    }
     return `${date.slice(5, 7)}/${date.slice(8, date.length)}/${date.slice(
       0,
       4
@@ -26,6 +22,9 @@ export class ActivityListingComponent {
   }
 
   public timeFormatter(time: string) {
+    if (!time) {
+      return;
+    }
     let timeFormat = '';
     if (time.slice(0, 2).includes('00')) {
       timeFormat = `12:${time.slice(3, 5)} AM`;

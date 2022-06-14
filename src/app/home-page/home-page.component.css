@@ -1,5 +1,25 @@
+.homepage-text {
+  margin-top: 96px;
+  font-style: italic;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: hsl(211, 100%, 13%);
+}
+
+.homepage-text p {
+  text-align: center;
+  width: 75%;
+  background-color: hsl(211, 100%, 97%);
+  border-radius: 6px;
+  padding: 12px;
+}
+
 .homepage-container {
-  margin-top: 24px;
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .hero-container {
@@ -10,7 +30,6 @@
   border-radius: 6px;
   padding: 4px;
   background-color: hsl(211, 50%, 85%);
-
 }
 
 .hero-content {
@@ -32,7 +51,7 @@
   display: flex;
 }
 
-.hero-title ul li+li {
+.hero-title ul li + li {
   margin-left: 12px;
 }
 
@@ -75,22 +94,23 @@ img {
 }
 
 .popn-logo-large {
-  margin-bottom: 24px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 400px;
 }
 .popn-background {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
-  width: 300px;
-  background-color: #c1c8e4;
-  border-radius: 136px;
+  width: 250px;
+  background-color: hsl(0, 99%, 64%);
+  border-radius: 6px;
 }
 
 .popn-logo-text {
-    color: #ffffff;
-    font-size: 72px;
-    font-weight: 700;
+  color: hsl(211, 100%, 97%);
+  font-size: 72px;
+  font-weight: 700;
 }

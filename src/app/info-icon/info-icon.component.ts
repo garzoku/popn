@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Activity } from '../Activity';
 
 @Component({
   selector: 'app-info-icon',
   templateUrl: './info-icon.component.html',
-  styleUrls: ['./info-icon.component.css']
+  styleUrls: ['./info-icon.component.css'],
 })
 export class InfoIconComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
+  @Input() activity?: Activity;
 }

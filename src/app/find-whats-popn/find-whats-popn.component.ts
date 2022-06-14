@@ -2,23 +2,21 @@ import { Component, Input, Output, SecurityContext } from '@angular/core';
 import { Activity } from '../Activity';
 import { ActivityService } from '../activity.service';
 
-
 @Component({
   selector: 'app-find-whats-popn',
   templateUrl: './find-whats-popn.component.html',
-  styleUrls: ['./find-whats-popn.component.css']
+  styleUrls: ['./find-whats-popn.component.css'],
 })
 export class FindWhatsPopnComponent {
-
-  activityList: Activity[] = [];
+  activityList: any = [];
   error = false;
 
-
-  constructor(private service: ActivityService){}
+  constructor(private service: ActivityService) {}
 
   ngOnInit(): void {
-    this.service.activityList.subscribe(response => {
-      this.activityList = response.activities;
-    })
+    this.service.activityList.subscribe((response) => {
+      this.activityList = response;
+      console.log(this.activityList);
+    });
   }
 }
