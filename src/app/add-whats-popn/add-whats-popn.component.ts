@@ -9,11 +9,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AddWhatsPopnComponent implements OnInit {
   // placeholders for presentation
-  $name: string = 'The Grand Ole Geoffery';
-  $address: string = '5150 Jack Byrnes Dr. Murfreesboro, TN 37128';
-  $websiteUrl: string = 'www.Grandoleopry.com';
+  $name: string = 'The Grand Ole Opry';
+  $address: string = '2804 Opryland Dr, Nashville';
+  $websiteUrl: string = 'https://www.opry.com/';
   $description: string =
-    "The Grand Ole Opry is the home of Country music and if ya don't like country music then ya ain't American!";
+    "The Grand Ole Opry is the home of Country music and if ya don't like country music then ya just ain't country!";
   activities: Activity[] = [];
   // var to hold shortlink from api response
   shortLink: string = '';
