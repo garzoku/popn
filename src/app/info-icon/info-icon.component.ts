@@ -9,7 +9,9 @@ import { Activity } from '../Activity';
 export class InfoIconComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+}
 
   @Input() activity?: Activity;
 }

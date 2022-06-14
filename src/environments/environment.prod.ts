@@ -10,7 +10,5 @@ export const environment = {
     measurementId: 'G-T0M2SSE041',
   },
   production: true,
-  urlEndpoint:"https://ik.imagekit.io/popn",
-  apiUrl:"https://popndb.herokuapp.com",
-  authenticationEndpoint: "https://popndb.herokuapp.com"
+  apiUrl: 'https://popndb.herokuapp.com',
 };

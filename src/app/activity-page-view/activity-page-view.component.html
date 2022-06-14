@@ -1,29 +1,48 @@
-<p *ngIf="error; else activityPageView" class="error">There was a problem getting the product list.</p>
+<p *ngIf="error; else activityPageView" class="error">
+  There was a problem getting the product list.
+</p>
 <ng-template #activityPageView>
-<figure class="event">
-  <div class="event-image">
-    <img src="{{activity.imageUrl}}">
-  </div>
-  <div class="content-background">
-  <div class="event-content">
-    <div class="event-title">
-      <h2>{{activity.name}}</h2>
-      <ul>
-        <li><a class="button" href="#">Directions</a></li>
-        <li><a class="button" href="#">Website</a></li>
-      </ul>
+  <figure class="event">
+    <div class="event-image">
+      <img src="{{ activity.imageUrl }}" />
     </div>
-    <div class="event-description">
-      <figcaption>
-        <p>{{activity.description}}</p>
-      </figcaption>
+    <div class="content-background">
+      <div class="event-content">
+        <div class="event-title">
+          <h2>{{ activity.name }}</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.google.com/search?q={{ activity.address }}"
+                target="_blank"
+                class="button"
+                >Directions</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://{{ activity.websiteUrl }}"
+                class="button"
+                target="_blank"
+                >Website</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="event-description">
+          <figcaption>
+            <p>{{ activity.description }}</p>
+          </figcaption>
+        </div>
+        <div class="event-metadata">
+          <p>
+            <span>Hours: </span>{{ activity.hourBeginning }} until
+            {{ activity.hourEnding }}
+          </p>
+          <p><span>Starts: </span>{{ activity.dateBeginning }}</p>
+          <p><span>Ends: </span> {{ activity.dateEnding }}</p>
+        </div>
+      </div>
     </div>
-    <div class="event-metadata">
-      <p><span>Hours: </span>{{activity.hourBeginning}} until {{activity.hourEnding}}</p>
-      <p><span>Starts: </span>{{activity.dateBeginning}}</p>
-      <p><span>Ends: </span> {{activity.dateEnding}}</p>
-    </div>
-  </div>
-</div>
-</figure>
+  </figure>
 </ng-template>
