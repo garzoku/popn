@@ -8,11 +8,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {
-    path: '**',
-    pathMatch: 'full',
-    component: PagenotfoundComponent,
-  },
-  {
     path: '',
     redirectTo: 'home-page',
     pathMatch: 'full',
@@ -32,6 +27,11 @@ const routes: Routes = [
   {
     path: 'activity/:id',
     component: ActivityPageComponent,
+  },
+
+  {
+    path: '**',
+    component: PagenotfoundComponent,
   },
 ];
 
