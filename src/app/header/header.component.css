@@ -4,7 +4,7 @@ header {
 }
 
 header nav {
-  margin-left: 6px;
+  margin-left: 12px;
   padding: 12px;
 }
 
@@ -18,7 +18,7 @@ header nav {
 
 header .favicon {
   padding: 8px;
-  margin-right: 6px;
+  margin-right: 12px;
   position: absolute;
   right: 0;
 }
