@@ -4,22 +4,44 @@
 }
 
 form {
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  height: 470px;
+}
+
+.form-top {
+  height: 375px;
   display: flex;
   justify-content: space-around;
 }
 
-.image-description-name {
+.form-bottom {
+  border-top: 1px solid hsl(211, 10%, 73%);
+  line-height: 2em;
+}
+
+ul {
+  white-space: nowrap;
+}
+
+li {
+  display: inline;
+  margin-right: 12px;
+}
+
+.top-left {
   width: 275px;
 }
 
-.image-description-name input {
+.top-left input {
   width: 90%;
 }
 
-.secondary-data {
+.top-right {
   width: 275px;
 }
-.secondary-data input {
+.top-right input {
   width: 100%;
 }
 
@@ -28,7 +50,8 @@ form input {
 }
 
 form textarea {
-  width: 90%;
+  width: 100%;
+  height: 147px;
 }
 
 .add-whats-popn-form {
