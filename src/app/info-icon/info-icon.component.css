@@ -1,5 +1,12 @@
+ul {
+  display: flex;
+}
+li + li {
+  margin-left: 4px;
+}
+
 .material-symbols-outlined {
-  padding: 3px;
+  padding: 6px;
   background-color: hsl(0, 99%, 80%);
   border-radius: 6px;
 }

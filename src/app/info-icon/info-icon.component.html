@@ -1,3 +1,5 @@
-<li>
-  <span class="material-symbols-outlined">child_friendly</span>
-</li>
+<ul>
+  <li *ngFor="let badge of activity?.badgesDto">
+    <span class="material-symbols-outlined">{{ badge.name }}</span>
+  </li>
+</ul>
