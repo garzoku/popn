@@ -15,7 +15,7 @@ export class ActivityListingComponent {
 
   public dateFormatter(date: string) {
     if (!date) {
-      return;
+      return `No Dates`;
     }
     return `${date.slice(5, 7)}/${date.slice(8, date.length)}/${date.slice(
       0,
@@ -25,7 +25,7 @@ export class ActivityListingComponent {
 
   public timeFormatter(time: string) {
     if (!time) {
-      return;
+      return `No Hours`;
     }
     let timeFormat = '';
     if (time.slice(0, 2).includes('00')) {

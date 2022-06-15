@@ -42,4 +42,37 @@
       </div>
     </div>
   </figure>
+  <form>
+    <legend>Choose Info Badges:</legend>
+    <div>
+      <label for="child_friendly">Child-Friendly</label>
+      <input
+        type="checkbox"
+        name="id"
+        value="{{ 5 }}"
+        (input)="addBadgeToActivity($event)"
+        (change)="removeBadgeFromActivity($event)"
+      />
+    </div>
+    <div>
+      <label for="attach_money">Admission Fee</label>
+      <input
+        type="checkbox"
+        name="id"
+        value="{{ 6 }}"
+        (input)="addBadgeToActivity($event)"
+        (change)="removeBadgeFromActivity($event)"
+      />
+    </div>
+    <div>
+      <label for="no_drinks">Alcohol Prohibited</label>
+      <input
+        type="checkbox"
+        name="id"
+        value="{{ 7 }}"
+        (input)="addBadgeToActivity($event)"
+        (change)="removeBadgeFromActivity($event)"
+      />
+    </div>
+  </form>
 </ng-template>

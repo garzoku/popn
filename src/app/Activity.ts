@@ -11,5 +11,13 @@ export class Activity {
   hourEnding!: string;
   dateBeginning!: string;
   dateEnding!: string;
+  isChildFriendly!: boolean;
+  isAdmission!: boolean;
+  isNoAlcohol!: boolean;
+  isPetFriendly!: boolean;
+  isParking!: boolean;
+  isAccessible!: boolean;
+  isWifi!: boolean;
+  isRsvp!: boolean;
   badgesDto?: Badge[];
 }

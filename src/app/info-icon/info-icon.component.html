@@ -1,5 +1,26 @@
 <ul>
-  <li *ngFor="let badge of activity?.badgesDto">
-    <span class="material-symbols-outlined">{{ badge.name }}</span>
+  <li [hidden]="activity?.isChildFriendly != true">
+    <span class="material-symbols-outlined">child_friendly</span>
+  </li>
+  <li [hidden]="activity?.isAdmission != true">
+    <span class="material-symbols-outlined">attach_money</span>
+  </li>
+  <li [hidden]="activity?.isNoAlcohol != true">
+    <span class="material-symbols-outlined">no_drinks</span>
+  </li>
+  <li [hidden]="activity?.isPetFriendly != true">
+    <span class="material-symbols-outlined">pets</span>
+  </li>
+  <li [hidden]="activity?.isParking != true">
+    <span class="material-symbols-outlined">local_parking</span>
+  </li>
+  <li [hidden]="activity?.isAccessible != true">
+    <span class="material-symbols-outlined">accessible</span>
+  </li>
+  <li [hidden]="activity?.isWifi != true">
+    <span class="material-symbols-outlined">wifi</span>
+  </li>
+  <li [hidden]="activity?.isRsvp != true">
+    <span class="material-symbols-outlined">Rsvp</span>
   </li>
 </ul>

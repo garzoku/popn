@@ -1,7 +1,7 @@
 import { Component, OnInit, SecurityContext } from '@angular/core';
 import { ActivityService } from '../activity.service';
 import { Activity } from '../Activity';
-import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-add-whats-popn',
   templateUrl: './add-whats-popn.component.html',
@@ -22,17 +22,21 @@ export class AddWhatsPopnComponent implements OnInit {
   selectedFile?: File;
   imageUrl = './assets/imagepreview.png';
 
-  constructor(private service: ActivityService, private http: HttpClient) {}
+  constructor(private service: ActivityService) {}
 
   ngOnInit(): void {}
+
+  addBadgeToActivity(event: Event) {}
+  removeBadgeFromActivity(event: Event) {}
 
   resetImage() {
     this.imageUrl = './assets/imagepreview.png';
   }
 
+  onCheck(event: any) {}
+
   onSelectFile(event: any) {
     if (event.target.value) {
-      console.log(event.target.value);
       this.imageUrl = event.target.value;
 
       // this.file = event.target.files[0];
