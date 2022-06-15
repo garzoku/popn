@@ -4,8 +4,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
 .background {
-  background-color: hsl(211, 50%, 90%);
+  background-color: hsl(0, 39%, 80%);
 }
 
 a {

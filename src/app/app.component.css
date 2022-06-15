@@ -3,6 +3,13 @@ main {
   flex-direction: column;
   min-height: 100vh;
   background-attachment: fixed;
-  margin-left: 18px;
-  margin-right: 18px;
+}
+
+.background {
+  background-color: hsl(211, 50%, 90%);
+}
+
+.side-padding {
+  margin-left: 32px;
+  margin-right: 32px;
 }

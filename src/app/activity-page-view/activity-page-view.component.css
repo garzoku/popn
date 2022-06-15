@@ -1,7 +1,6 @@
 .event {
   display: flex;
-  flex-direction: column;
-  width: 600px;
+  max-width: 90%;
   position: relative;
   border-radius: 6px;
   background-color: hsl(211, 50%, 85%);
@@ -42,6 +41,7 @@
 .event-description {
   margin-top: 16px;
   font-size: 16px;
+  line-height: 22px;
 }
 
 .event-metadata {
@@ -49,6 +49,7 @@
   font-size: 14px;
   position: absolute;
   bottom: 0;
+  line-height: 16px;
 }
 
 .event-metadata p {
@@ -60,8 +61,7 @@
 }
 
 img {
-  max-width: 700px;
-  width: 100%;
+  width: 400px;
   border-radius: 6px;
 }
 

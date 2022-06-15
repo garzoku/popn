@@ -23,17 +23,17 @@ header .favicon {
   right: 0;
 }
 
-.favicon a{
+.favicon a {
   text-decoration: none;
   background-color: hsl(0, 99%, 64%);
   padding: 12px;
   border-radius: 6px;
   color: hsl(178, 60%, 98%);
   font-size: 20px;
-  font-weight: 600 ;
+  font-weight: 600;
 }
 
-li+li {
+li + li {
   margin: 0 6px;
 }
 
@@ -62,9 +62,5 @@ a {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }

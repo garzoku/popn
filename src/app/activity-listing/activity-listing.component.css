@@ -32,11 +32,6 @@
   color: hsl(211, 100%, 5%);
 }
 
-.listing-description {
-  margin-top: 14px;
-  font-size: 16px;
-}
-
 .listing-metadata {
   margin-bottom: 14px;
   font-size: 15px;
@@ -44,13 +39,11 @@
   bottom: 0;
   text-align: left;
   color: hsl(211, 100%, 5%);
+  line-height: 20px;
 }
 
 .listing-metadata span {
   color: hsl(211, 25%, 53%);
-}
-
-.listing-image {
 }
 
 img {
