@@ -18,6 +18,7 @@ import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { InfoIconComponent } from './info-icon/info-icon.component';
 import { InfoIconColumnComponent } from './info-icon-column/info-icon-column.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { InfoIconColumnComponent } from './info-icon-column/info-icon-column.com
     ActivityPageViewComponent,
     HomePageComponent,
     InfoIconComponent,
-    InfoIconColumnComponent
+    InfoIconColumnComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
