@@ -1,0 +1,23 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2px;
+}
+li {
+  margin: 4px;
+  height: 100%;
+}
+
+.material-symbols-outlined {
+  padding: 6px;
+  background-color: hsl(0, 99%, 80%);
+  border-radius: 6px;
+}
+
+.material-symbols-empty {
+  margin: 7px 4px 7px 4px;
+  padding: 3px 8px 3px 8px;
+  background-color: hsl(211, 30%, 80%);
+  border-radius: 6px;
+}
