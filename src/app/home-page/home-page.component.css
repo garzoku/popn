@@ -85,21 +85,21 @@ img {
 }
 
 .button {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   padding: 4px 12px 4px 12px;
   border-radius: 6px;
-  background-color: hsl(0, 99%, 64%);
-  color: hsl(211, 100%, 97%);
+  background-color: hsl(0, 79%, 52%);
+  color: #ffffff;
 }
 
 .button:hover {
-  background-color: hsl(0, 99%, 44%);
+  background-color: hsl(0, 99%, 40%);
 }
 
 .button:active {
-  background-color: hsl(0, 99%, 44%);
+  background-color: hsl(0, 99%, 40%);
   transform: translateY(4px);
 }
 
@@ -115,12 +115,12 @@ img {
   align-items: center;
   height: 150px;
   width: 250px;
-  background-color: hsl(0, 99%, 64%);
+  background-color: hsl(0, 79%, 52%);
   border-radius: 6px;
 }
 
 .popn-logo-text {
-  color: hsl(211, 100%, 97%);
+  color: #ffffff;
   font-size: 72px;
   font-weight: 700;
 }
