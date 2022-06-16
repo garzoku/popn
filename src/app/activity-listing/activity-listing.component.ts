@@ -9,8 +9,6 @@ import { Activity } from '../Activity';
 export class ActivityListingComponent {
   @Input() activity!: Activity;
 
-  //@Output() activityOut?: Activity;
-
   constructor() {}
 
   public dateFormatter(date: string) {
