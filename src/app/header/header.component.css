@@ -28,7 +28,7 @@ header .favicon {
   background-color: hsl(0, 99%, 64%);
   padding: 12px;
   border-radius: 6px;
-  color: hsl(178, 60%, 98%);
+  color: #ffffff;
   font-size: 20px;
   font-weight: 600;
 }
@@ -44,7 +44,7 @@ li + li {
   padding: 4px 12px 4px 12px;
   border-radius: 6px;
   border: 3px solid hsl(0, 99%, 64%);
-  color: hsl(178, 60%, 98%);
+  color: #ffffff;
 }
 
 .button:hover {

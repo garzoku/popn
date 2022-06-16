@@ -65,13 +65,10 @@ export class AddWhatsPopnComponent implements OnInit {
   }
 
   addActivity(newActivity: Activity) {
-    console.log(newActivity.description);
-    console.log(`api returns: ${this.censoredDescrip}`);
     newActivity.imageUrl = this.imageUrl;
     if (this.censoredDescrip !== '') {
       newActivity.description = this.censoredDescrip;
     }
-    console.log(newActivity);
     this.service.addActivity(newActivity).subscribe((response) => {
       this.activities = [response.activity, ...this.activities];
     });

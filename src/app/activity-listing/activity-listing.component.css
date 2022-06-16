@@ -39,7 +39,7 @@
   position: absolute;
   bottom: 0;
   text-align: left;
-  color: hsl(211, 100%, 5%);
+  color: hsl(211, 100%, 1%);
 
   line-height: 20px;
 }
@@ -53,12 +53,12 @@
   bottom: 0;
   right: 0;
   text-align: right;
-  color: hsl(211, 25%, 53%);
+  color: hsl(211, 25%, 35%);
   line-height: 20px;
 }
 
 .listing-metadata span {
-  color: hsl(211, 25%, 53%);
+  color: hsl(211, 25%, 35%);
 }
 
 img {
