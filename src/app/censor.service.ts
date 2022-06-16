@@ -1,10 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-type StringResponse = {
-  value: string;
-};
-
 @Injectable({
   providedIn: 'root',
 })
