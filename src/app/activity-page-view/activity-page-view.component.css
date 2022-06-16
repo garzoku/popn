@@ -1,43 +1,62 @@
 .event {
   margin-right: auto;
   margin-left: auto;
-  display: flex;
-  position: relative;
+  max-width: 800px;
+  min-width: 705px;
+  height: auto;
   border-radius: 6px;
-  background-color: hsl(211, 50%, 85%);
-  border: 2px solid hsl(211, 50%, 85%);
-  padding: 2px;
-}
-
-.content-background {
+  border-right: 4px solid hsl(211, 50%, 85%);
+  border-bottom: 4px solid hsl(211, 50%, 85%);
   background-color: hsl(211, 100%, 97%);
-  margin-bottom: 3px;
-  border-radius: 6px;
-  margin-left: 5px;
+  padding-bottom: 4px;
+  padding-right: 4px;
 }
 
-.event-content {
-  margin: 16px;
+.grid-container {
+  margin: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 12px 12px;
+}
+
+.grid-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.grid-2 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+  position: relative;
+  padding-top: 8px;
+}
+
+.grid-3 {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1;
 }
 
 .event-title {
-  margin-top: 4px;
   padding-bottom: 15px;
+}
+
+.links {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  display: flex;
   border-bottom: 1px solid hsl(211, 10%, 73%);
 }
 
-.event-title ul {
-  display: flex;
-}
-
-.event-title li + li {
+.links li + li {
   margin-left: 12px;
 }
 
-.event-title h2 {
-  font-size: 20px;
+h2 {
+  font-size: 24px;
   font-weight: 500;
-  margin-bottom: 15px;
 }
 
 .event-description {
@@ -49,9 +68,9 @@
 }
 
 .event-metadata {
-  margin-bottom: 10px;
-  font-size: 14px;
   position: absolute;
+  margin-bottom: 48px;
+  font-size: 14px;
   bottom: 0;
   line-height: 20px;
 }
@@ -60,13 +79,9 @@
   color: hsl(211, 25%, 53%);
 }
 
-.event-metadata p {
-  margin-bottom: 2px;
-}
-
 img {
-  width: 500px;
-  height: 350px;
+  max-width: 400px;
+  height: 275px;
   object-fit: cover;
   border-radius: 6px;
 }

@@ -3,35 +3,35 @@
 </p>
 <ng-template #activityPageView>
   <figure class="event">
-    <div class="event-image">
-      <img src="{{ activity.imageUrl }}" />
-    </div>
-    <div class="content-background">
-      <div class="event-content">
-        <div class="event-title">
-          <h2>{{ activity.name }}</h2>
-          <ul>
-            <li>
-              <a
-                href="https://www.google.com/maps/dir/?api=1query={{
-                  activity.name
-                }}+{{ activity.city }}+{{ activity.state }}"
-                target="_blank"
-                class="button"
-                >Directions</a
-              >
-            </li>
-            <li>
-              <a href="{{ activity.websiteUrl }}" class="button" target="_blank"
-                >Website</a
-              >
-            </li>
-          </ul>
+    <div class="grid-container">
+      <div class="grid-1">
+        <div class="image">
+          <img src="{{ activity.imageUrl }}" />
         </div>
-        <div class="event-description">
-          <figcaption>
-            <p>{{ activity.description }}</p>
-          </figcaption>
+      </div>
+      <div class="grid-2">
+        <div class="name">
+          <h2>{{ activity.name }}</h2>
+        </div>
+        <ul class="links">
+          <li>
+            <a
+              href="https://www.google.com/maps/dir/?api=1query={{
+                activity.name
+              }}+{{ activity.city }}+{{ activity.state }}"
+              target="_blank"
+              class="button"
+              >Directions</a
+            >
+          </li>
+          <li>
+            <a href="{{ activity.websiteUrl }}" class="button" target="_blank"
+              >Website</a
+            >
+          </li>
+        </ul>
+        <div class="badges">
+          <app-info-icon [activity]="activity"></app-info-icon>
         </div>
         <div class="event-metadata">
           <p>
@@ -44,7 +44,13 @@
           </p>
         </div>
       </div>
+      <div class="grid-3">
+        <div class="event-description">
+          <figcaption>
+            <p>{{ activity.description }}</p>
+          </figcaption>
+        </div>
+      </div>
     </div>
-    <app-info-icon-column [activity]="activity"></app-info-icon-column>
   </figure>
 </ng-template>
