@@ -5,10 +5,6 @@ import { CensorService } from '../censor.service';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
-type StringResponse = {
-  result: string;
-};
-
 @Component({
   selector: 'app-add-whats-popn',
   templateUrl: './add-whats-popn.component.html',
@@ -47,8 +43,6 @@ export class AddWhatsPopnComponent implements OnInit {
     this.imageUrl = './assets/imagepreview.png';
   }
 
-  onCheck(event: any) {}
-
   onSelectFile(event: any) {
     if (event.target.value) {
       this.imageUrl = event.target.value;
@@ -71,6 +65,8 @@ export class AddWhatsPopnComponent implements OnInit {
   }
 
   addActivity(newActivity: Activity) {
+    console.log(newActivity.description);
+    console.log(`api returns: ${this.censoredDescrip}`);
     newActivity.imageUrl = this.imageUrl;
     newActivity.description = this.censoredDescrip;
     console.log(newActivity);

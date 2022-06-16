@@ -1,7 +1,7 @@
 .listing {
   display: flex;
   width: 660px;
-  height: 179px;
+  height: 175px;
   position: relative;
   border-radius: 6px;
   background-color: hsl(211, 100%, 97%);
@@ -44,6 +44,19 @@
   line-height: 20px;
 }
 
+.location {
+  margin-right: 16px;
+  margin-bottom: 14px;
+  padding-top: 8px;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  color: hsl(211, 25%, 53%);
+  line-height: 20px;
+}
+
 .listing-metadata span {
   color: hsl(211, 25%, 53%);
 }
@@ -54,5 +67,4 @@ img {
   height: 150px;
   object-fit: cover;
   border-radius: 6px;
-  border: 3px solid hsl(211, 25%, 53%);
 }

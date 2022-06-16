@@ -1,0 +1,202 @@
+<div class="add-whats-popn-background">
+  <div class="add-whats-popn-form">
+    <form
+      *ngIf="activity"
+      #editActivityForm="ngForm"
+      (ngSubmit)="
+        editActivity(editActivityForm.value);
+        editActivityForm.reset();
+        resetImage()
+      "
+      action="add-whats-popn"
+    >
+      <div class="form-top">
+        <div class="top-left">
+          <label for="imageUrl">Upload Image</label><br />
+          <input
+            ngModel
+            type="text"
+            name="imageUrl"
+            id="imageUrl"
+            [(ngModel)]="activity.imageUrl"
+          /><br />
+          <img src="{{ activity.imageUrl }}" /><br />
+
+          <label for="name">Activity Name</label><br />
+          <input
+            ngModel
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="activity.name"
+          /><br />
+          <label for="city">City</label><br />
+          <input
+            ngModel
+            type="text"
+            id="city"
+            name="city"
+            [(ngModel)]="activity.city"
+          /><br />
+        </div>
+        <div class="top-right">
+          <label for="websiteUrl">Website</label><br />
+          <input
+            ngModel
+            type="text"
+            id="websiteUrl"
+            name="websiteUrl"
+            [(ngModel)]="activity.websiteUrl"
+          /><br />
+          <div class="hours-dates">
+            <div class="hours">
+              <label for="hourBeginning">Open</label><br />
+              <input
+                ngModel
+                type="time"
+                id="hourBeginning"
+                name="hourBeginning"
+                [(ngModel)]="activity.hourBeginning"
+              /><br />
+
+              <label for="hourEnding">Closed</label><br />
+              <input
+                ngModel
+                type="time"
+                id="hourEnding"
+                name="hourEnding"
+                [(ngModel)]="activity.hourEnding"
+              /><br />
+            </div>
+            <div class="dates">
+              <label for="dateBeginning">Begins</label><br />
+              <input
+                ngModel
+                type="date"
+                id="dateBeginning"
+                name="dateBeginning"
+                [(ngModel)]="activity.dateBeginning"
+              /><br />
+
+              <label for="dateEnding">Ends</label><br />
+              <input
+                ngModel
+                type="date"
+                id="dateEnding"
+                name="dateEnding"
+                [(ngModel)]="activity.dateEnding"
+              /><br />
+            </div>
+          </div>
+          <label for="description">Description</label><br />
+          <textarea
+            ngModel
+            id="description"
+            name="description"
+            (change)="censorText($event)"
+            [(ngModel)]="activity.description"
+          ></textarea
+          ><br />
+          <label for="state">State</label><br />
+          <input
+            ngModel
+            type="text"
+            id="state"
+            name="state"
+            [(ngModel)]="activity.state"
+          /><br />
+        </div>
+      </div>
+      <div class="form-bottom">
+        <legend>Choose Info Badges:</legend>
+        <ul class="checkboxes">
+          <li class="option">
+            <label for="isChildFriendly">Child-Friendly</label>
+            <input
+              ngModel
+              type="checkbox"
+              name="isChildFriendly"
+              id="isChildFriendly"
+              [(ngModel)]="activity.isChildFriendly"
+            />
+          </li>
+          <li class="option">
+            <label for="isAdmission">Admission Fee</label>
+            <input
+              ngModel
+              type="checkbox"
+              name="isAdmission"
+              id="isAdmission"
+              [(ngModel)]="activity.isAdmission"
+            />
+          </li>
+          <li class="option">
+            <label for="isNoAlcohol">Alcohol Prohibited</label>
+            <input
+              ngModel
+              type="checkbox"
+              name="isNoAlcohol"
+              id="isNoAlcohol"
+              [(ngModel)]="activity.isNoAlcohol"
+            />
+          </li>
+          <li class="option">
+            <label for="isPetFriendly">Pet-Friendly</label>
+            <input
+              ngModel
+              type="checkbox"
+              name="isPetFriendly"
+              id="isPetFriendly"
+              [(ngModel)]="activity.isPetFriendly"
+            />
+          </li>
+          <br />
+          <li class="option">
+            <label for="isParking">Local Parking</label>
+            <input
+              ngModel
+              type="checkbox"
+              name="isParking"
+              id="isParking"
+              [(ngModel)]="activity.isParking"
+            />
+          </li>
+          <li class="option">
+            <label for="isAccessible">Accessible</label>
+            <input
+              ngModel
+              type="checkbox"
+              name="isAccessible"
+              id="isAccessible"
+              [(ngModel)]="activity.isAccessible"
+            />
+          </li>
+          <li class="option">
+            <label for="isWifi">Free Wifi</label>
+            <input
+              ngModel
+              type="checkbox"
+              name="isWifi"
+              id="isWifi"
+              [(ngModel)]="activity.isWifi"
+            />
+          </li>
+          <li class="option">
+            <label for="isRsvp">RSVP Only</label>
+            <input
+              ngModel
+              type="checkbox"
+              name="isRsvp"
+              id="isRsvp"
+              [(ngModel)]="activity.isRsvp"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <input class="button" value="Delete" (click)="removeActivity()" />
+        <input class="button" type="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+</div>

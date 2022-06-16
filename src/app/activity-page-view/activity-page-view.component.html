@@ -45,6 +45,16 @@
         </div>
       </div>
       <div class="grid-3">
+        <div class="event-button">
+          <a
+            class="button"
+            routerLink="/edit-activity/{{ activity.id }}"
+            routerLinkActive="active"
+            >Edit</a
+          >
+        </div>
+      </div>
+      <div class="grid-4">
         <div class="event-description">
           <figcaption>
             <p>{{ activity.description }}</p>

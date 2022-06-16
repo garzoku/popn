@@ -55,10 +55,22 @@ export class ActivityService {
   }
 
   addActivity(activity: Activity) {
-    console.log(activity);
     return this.http.post<ActivityReponse>(
       `${baseApiUrl}/api/activities`,
       activity
     );
+  }
+
+  editActivity(activity: Activity) {
+    console.log(activity.id);
+    return this.http.put<ActivityReponse>(
+      `${baseApiUrl}/api/activities/${activity.id}`,
+      activity
+    );
+  }
+
+  deleteActivity(id: number) {
+    console.log('method fired in service');
+    return this.http.delete(`${baseApiUrl}/api/activities/${id}`);
   }
 }

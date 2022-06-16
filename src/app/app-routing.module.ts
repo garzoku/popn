@@ -5,6 +5,7 @@ import { AddWhatsPopnComponent } from './add-whats-popn/add-whats-popn.component
 import { ActivityPageComponent } from './activity-page/activity-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { EditActivityComponent } from './edit-activity/edit-activity.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'activity/:id',
     component: ActivityPageComponent,
+  },
+  {
+    path: 'edit-activity/:id',
+    component: EditActivityComponent,
   },
 
   {

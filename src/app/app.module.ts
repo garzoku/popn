@@ -19,6 +19,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { InfoIconComponent } from './info-icon/info-icon.component';
 import { InfoIconColumnComponent } from './info-icon-column/info-icon-column.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { EditActivityComponent } from './edit-activity/edit-activity.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     HomePageComponent,
     InfoIconComponent,
     InfoIconColumnComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    EditActivityComponent
   ],
   imports: [
     BrowserModule,
