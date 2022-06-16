@@ -2,8 +2,10 @@
 
 App URL: https://whatspopn.netlify.app
 
-## Sample Images
+## Sample Image
+
+![](/src/assets/popn-activities.PNG?raw=true)
 
 ## App Explanation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Find fun things to do, curated and reviewed by people like you, all through the power of crowdsourcing.
