@@ -1,6 +1,13 @@
 import { Component, OnInit, SecurityContext } from '@angular/core';
 import { ActivityService } from '../activity.service';
 import { Activity } from '../Activity';
+import { CensorService } from '../censor.service';
+import { switchMap } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+
+type StringResponse = {
+  result: string;
+};
 
 @Component({
   selector: 'app-add-whats-popn',
@@ -10,10 +17,12 @@ import { Activity } from '../Activity';
 export class AddWhatsPopnComponent implements OnInit {
   // placeholders for presentation
   $name: string = 'The Grand Ole Opry';
-  $address: string = '2804 Opryland Dr, Nashville';
+  $city: string = 'Nashville';
+  $state: string = 'Tennessee';
   $websiteUrl: string = 'https://www.opry.com/';
   $description: string =
     "The Grand Ole Opry is the home of Country music and if ya don't like country music then ya just ain't country!";
+  censoredDescrip = '';
   activities: Activity[] = [];
   // var to hold shortlink from api response
   shortLink: string = '';
@@ -22,7 +31,12 @@ export class AddWhatsPopnComponent implements OnInit {
   selectedFile?: File;
   imageUrl = './assets/imagepreview.png';
 
-  constructor(private service: ActivityService) {}
+  element?: HTMLTextAreaElement;
+
+  constructor(
+    private service: ActivityService,
+    private censorService: CensorService
+  ) {}
 
   ngOnInit(): void {}
 
@@ -38,38 +52,28 @@ export class AddWhatsPopnComponent implements OnInit {
   onSelectFile(event: any) {
     if (event.target.value) {
       this.imageUrl = event.target.value;
-
-      // this.file = event.target.files[0];
-      // let reader = new FileReader();
-      //  reader.readAsDataURL(event.target.files[0]);
-      //  reader.onload=(event:any)=>{
-      //    this.imageUrl=event.target.result;
     } else {
       this.resetImage();
     }
   }
 
-  /*onUpload(event: any) {
-if(event.target.files){
-    this.file = event.target.files[0];
-    const fd = new FormData();
-    let reader = new FileReader();
-    reader.readAsDataURL(event.target?.files[0]);
-    reader.onload=(event:any)=>{
-      this.imageUrl=event.target.result;
+  censorText(event: Event) {
+    if (event.target) {
+      let e = event.target as HTMLTextAreaElement;
+      this.censorService.getCensoredText(e.value).subscribe((response) => {
+        let parsedResponse = JSON.stringify(response);
+        this.censoredDescrip = parsedResponse.slice(
+          11,
+          parsedResponse.length - 2
+        );
+      });
     }
-  //fd.append('image', this.file, this.file.name)
-
- // this.http.post(`https://us-central1-popn-media.cloudfunctions.net/uploadFile`, fd, ).subscribe(res => {
-
- // console.log(res);
-//})
-}
-
-}*/
+  }
 
   addActivity(newActivity: Activity) {
     newActivity.imageUrl = this.imageUrl;
+    newActivity.description = this.censoredDescrip;
+    console.log(newActivity);
     this.service.addActivity(newActivity).subscribe((response) => {
       this.activities = [response.activity, ...this.activities];
     });

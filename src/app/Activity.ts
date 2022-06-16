@@ -5,7 +5,8 @@ export class Activity {
   imageUrl!: string;
   name!: string;
   websiteUrl!: string;
-  address!: string;
+  city!: string;
+  state!: string;
   description!: string;
   hourBeginning!: string;
   hourEnding!: string;

@@ -29,13 +29,13 @@
             name="name"
             [(ngModel)]="$name"
           /><br />
-          <label for="address">Activity Address</label><br />
+          <label for="city">City</label><br />
           <input
             ngModel
             type="text"
-            id="address"
-            name="address"
-            [(ngModel)]="$address"
+            id="city"
+            name="city"
+            [(ngModel)]="$city"
           /><br />
         </div>
         <div class="top-right">
@@ -88,9 +88,18 @@
             ngModel
             id="description"
             name="description"
+            (change)="censorText($event)"
             [(ngModel)]="$description"
           ></textarea
           ><br />
+          <label for="state">State</label><br />
+          <input
+            ngModel
+            type="text"
+            id="state"
+            name="state"
+            [(ngModel)]="$state"
+          /><br />
         </div>
       </div>
       <div class="form-bottom">
